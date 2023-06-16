@@ -1,0 +1,74 @@
+#contact{
+  min-width: 1300px;
+  background-color: #f5f5f5;
+}
+#contact > .wrap{
+  width: 1100px;
+  padding: 80px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info{
+  width: 340px;
+}
+.info > h1{
+  font-size: 28px;
+  color: #333;
+}
+.info > p{
+  line-height: 1.8;
+  font-size: 14px;
+  color: #666;
+}
+.info > .txt{
+  margin: 20px 0 40px;
+}
+
+.contact{
+  width: 635px;
+  margin: 20px 0 80px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start; /*교차축(수직) 정렬을 상단에서부터로 설정*/
+}
+input[type=text]{
+  width: 310px;
+  height: 40px;
+  padding: 10px;
+  background-color: #fff;
+  border: none;
+  outline: none; /*클릭했을때 나오는 outline을 제거*/
+  margin-bottom: 20px;
+  /* 원하는 마진을 주기위해 align-content: flex-start;을 넣고 margin을 줌.*/
+  color: #666;
+}
+input:nth-child(3){width: 635px;}
+
+textarea{
+  width: 635px;
+  height: 160px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px /*글자가 입력창 끝에 딱 붙지 않도록*/;
+  font-size: 14px;
+  color: #666;
+  resize: none; /*textarea는 사이즈를 변경할 수 있는데 사이즈를 조절할 수 없도록 resize: none을 사용함.*/
+  margin-bottom: 40px;
+}
+
+input[type=submit]{
+  padding: 10px 25px;
+  font-size: 14px;
+  background-color: #10c9c3;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type=submit]:hover{
+  background-color: #0ca49f;
+}

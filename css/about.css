@@ -1,0 +1,91 @@
+/* #banner 영역 */
+#banner{
+  min-width: 1300px;
+  padding: 80px 0;
+  background: linear-gradient(0deg,rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 100%), url(../img/banner.jpg) center/cover;
+  /* 배경이미지와 그라디언트를 겹쳐서 반투명처럼 만듬. (0%, 100% = 위치값은 생략할 수 있다.)*/
+  text-align: center;
+  color: #f1f1f1;
+}
+
+#banner h1{
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* numbers영역 */
+#numbers{
+  min-width: 1300px;
+  background-color: #10c9c3;
+  color: #f1f1f1;
+}
+#numbers > .wrap{
+  padding: 100px 0;
+  display: flex;
+}
+#numbers .box{
+  width: 25%; /*4개의 요소를 동일한 크기로 일정하게 주기위해서.*/
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid #f1f1f1;
+}
+#numbers .box:last-child{ /*마지막요소의 border를 제거*/
+  border: none;
+}
+#numbers .box img{
+  margin-right: 20px;
+}
+
+/* about_me영역 */
+#about_me{
+  min-width: 1300px;
+  background-color: #f5f5f5;
+}
+#about_me > .wrap{
+  display: flex;
+  align-items: center; /*교차축(세로)으로 가운데정렬*/
+}
+
+/*이미지의 여백을 지우기 위해 사용*/
+.largeImg > img{display: block;}
+
+#about_me .txt{
+  padding: 0 90px;
+}
+#about_me .txt h1{
+  font-size: 28px;
+  color: #191919;
+}
+#about_me .txt p{
+  margin: 20px 0;
+  color: #666;
+}
+#about_me .txt .sign{margin-top: 30px;}
+
+/* projects 영역 */
+#projects{
+  min-width: 1300px;
+  padding: 80px 0;
+  text-align: center;
+}
+#projects > h1{
+  font-size: 28px;
+  color: #191919;
+}
+#projects > p{
+  margin: 20px 0 30px;
+  color: #666;
+}
+#projects > button{
+  padding: 15px 35px;
+  background-color: #10c9c3;
+  border: none;
+  color: #f1f1f1;
+  font-size: 12px;
+  letter-spacing: 1px; /*자간조절*/
+  cursor: pointer;
+}
+
+#projects > button:hover{
+  background-color: #0ca49f;
+}
